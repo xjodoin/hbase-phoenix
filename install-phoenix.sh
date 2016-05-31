@@ -7,5 +7,4 @@ mv phoenix-$PHOENIX_VERSION-bin /opt/
 rm -f phoenix-$PHOENIX_VERSION-bin.tar.gz
 ln -s /opt/phoenix-$PHOENIX_VERSION-bin /opt/phoenix
 
-cp /opt/phoenix/phoenix-server-$PHOENIX_VERSION.jar /opt/hbase/lib/
-cp /opt/phoenix/phoenix-core-$PHOENIX_VERSION.jar /opt/hbase/lib/
+cp /opt/phoenix/phoenix-$PHOENIX_VERSION-server.jar /opt/hbase/lib/
