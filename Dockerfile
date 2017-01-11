@@ -1,7 +1,7 @@
 FROM xjodoin/hbase:1.2
 MAINTAINER Xavier Jodoin <xavier@jodoin.me>
 
-ENV PHOENIX_VERSION=4.8.1-HBase-1.2
+ENV PHOENIX_VERSION=4.9.0-HBase-1.2
 
 RUN mkdir /phoenix-setup
 WORKDIR /phoenix-setup
