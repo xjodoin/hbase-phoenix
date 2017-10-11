@@ -4,7 +4,7 @@ MAINTAINER Xavier Jodoin <xavier@jodoin.me>
 RUN apt-get update && apt-get install -y supervisor python-pip && pip install supervisor-stdout
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-ENV PHOENIX_VERSION=4.10.0-HBase-1.2
+ENV PHOENIX_VERSION=4.11.0-HBase-1.2
 
 RUN mkdir /phoenix-setup
 WORKDIR /phoenix-setup
