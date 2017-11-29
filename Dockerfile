@@ -1,10 +1,12 @@
-FROM xjodoin/hbase:1.2
+FROM xjodoin/hbase:1.1
 MAINTAINER Xavier Jodoin <xavier@jodoin.me>
 
 RUN apt-get update && apt-get install -y supervisor python-pip && pip install supervisor-stdout
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-ENV PHOENIX_VERSION=4.12.0-HBase-1.2
+ENV PHOENIX_VERSION=4.13.1
+ENV BUILD_QUALIFIER=rc0
+ENV HBASE_VERSION=1.1
 
 RUN mkdir /phoenix-setup
 WORKDIR /phoenix-setup
