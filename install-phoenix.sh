@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget http://archive.apache.org/dist/phoenix/apache-phoenix-$PHOENIX_VERSION-HBase-$HBASE_VERSION-$BUILD_QUALIFIER/bin/apache-phoenix-$PHOENIX_VERSION-HBase-$HBASE_VERSION-bin.tar.gz
+wget $BUILD_REPO/apache-phoenix-$PHOENIX_VERSION-HBase-$HBASE_VERSION-$BUILD_QUALIFIER/bin/apache-phoenix-$PHOENIX_VERSION-HBase-$HBASE_VERSION-bin.tar.gz
 
 tar -xzf apache-phoenix-$PHOENIX_VERSION-bin.tar.gz
 mv apache-phoenix-$PHOENIX_VERSION-bin /opt/
