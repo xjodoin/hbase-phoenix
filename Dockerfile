@@ -4,10 +4,10 @@ MAINTAINER Xavier Jodoin <xavier@jodoin.me>
 RUN apt-get update && apt-get install -y supervisor python-pip && pip install supervisor-stdout
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-#ENV BUILD_REPO=http://archive.apache.org/dist/phoenix
-ENV BUILD_REPO=https://dist.apache.org/repos/dist/dev/phoenix
+ENV BUILD_REPO=http://archive.apache.org/dist/phoenix
+#ENV BUILD_REPO=https://dist.apache.org/repos/dist/dev/phoenix
 ENV PHOENIX_VERSION=4.13.1
-ENV BUILD_QUALIFIER=rc0
+ENV BUILD_QUALIFIER=''
 ENV HBASE_VERSION=1.1
 
 RUN mkdir /phoenix-setup
